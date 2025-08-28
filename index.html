@@ -5,18 +5,83 @@
   <title>계산기</title>
   <meta name="viewport" content="width=400, initial-scale=1">
   <style>
-    body { background: #f7f7fa; font-family: 'Segoe UI', Arial, sans-serif; }
-    .container { max-width: 400px; margin: 60px auto; background: #fff; border-radius: 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); padding: 32px 24px; }
-    h1 { text-align: center; color: #333; margin-bottom: 30px; }
-    .calculator-display { width: 100%; height: 50px; font-size: 2em; text-align: right; padding: 8px 12px; margin-bottom: 18px; border: 1px solid #ddd; border-radius: 6px; background: #f4f4f4; box-sizing: border-box; }
-    .calculator-buttons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
-    .calculator-buttons button { padding: 18px 0; font-size: 1.2em; border: none; background: #e3e5ed; border-radius: 6px; cursor: pointer; transition: background 0.18s; }
-    .calculator-buttons button:hover { background: #cdd1dc; }
-    .calculator-buttons .equals { background: #4885ed; color: #fff; grid-column: span 4; font-weight: bold; }
-    .calculator-buttons .equals:hover { background: #3268bb; }
+    body {
+      background: #f7f7fa;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    .container {
+      max-width: 400px;
+      margin: 60px auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      padding: 32px 24px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+    .calculator-display {
+      width: 100%;
+      height: 50px;
+      font-size: 2em;
+      text-align: right;
+      padding: 8px 12px;
+      margin-bottom: 18px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      background: #f4f4f4;
+      box-sizing: border-box;
+    }
+    .calculator-buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+    .calculator-buttons button {
+      padding: 18px 0;
+      font-size: 1.2em;
+      border: none;
+      background: #e3e5ed;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.18s;
+    }
+    .calculator-buttons button:hover {
+      background: #cdd1dc;
+    }
+    .calculator-buttons .equals {
+      background: #4885ed;
+      color: #fff;
+      grid-column: span 4;
+      font-weight: bold;
+    }
+    .calculator-buttons .equals:hover {
+      background: #3268bb;
+    }
+    .ads-container {
+      margin-bottom: 24px;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
+  <!-- 광고 (계산기 위) -->
+  <div class="ads-container">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4634078773523032"
+     crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-4634078773523032"
+         data-ad-slot="8919515384"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
   <div class="container">
     <h1>계산기</h1>
     <input type="text" class="calculator-display" id="display" disabled />
